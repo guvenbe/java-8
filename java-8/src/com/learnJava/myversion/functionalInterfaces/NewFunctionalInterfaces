@@ -1,0 +1,9 @@
+Consumer
+Predicate
+Function
+Supplier
+
+Consumer - BiConsumer
+Predicate - BiPredicate
+Function - BiFunction, UnaryOperator, BinaryOperator
+Supplier - BiSupplier
