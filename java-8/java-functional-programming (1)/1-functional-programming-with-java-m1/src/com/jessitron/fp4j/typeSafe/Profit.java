@@ -1,6 +1,8 @@
-public class Profit implements QuantityOfInterest {
-    private final Sales sales;
-    private final IncrementalCosts incrementalCosts;
+
+
+public class Profit implements com.jessitron.fp4j6.QuantityOfInterest {
+    private final com.jessitron.fp4j6.Sales sales;
+    private final com.jessitron.fp4j6.IncrementalCosts incrementalCosts;
     private final FixedCosts fixedCosts;
 
     public Profit(Sales s, IncrementalCosts ic, FixedCosts fc) {
