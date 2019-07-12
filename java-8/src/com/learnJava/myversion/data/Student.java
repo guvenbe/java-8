@@ -18,6 +18,16 @@ public class Student {
         this.activities = activities;
     }
 
+    public Student(String s) {
+        this.name=s;
+
+    }
+
+    public Student() {
+
+    }
+
+
     public String getGender() {
         return gender;
     }
@@ -50,7 +60,9 @@ public class Student {
         this.gpa = gpa;
     }
 
-
+    public void printListOfActivities(){
+        System.out.println(activities);
+    }
 
     public List<String> getActivities() {
         return activities;
