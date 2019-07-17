@@ -3,7 +3,7 @@ package com.learnJava.myversion.numericstreams;
 import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
-public class NumericStreamRageExamples {
+public class NumericStreamRangesExamples {
 
     public static void main(String[] args) {
 

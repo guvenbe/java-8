@@ -43,7 +43,7 @@ public class NumericStreamMapExample {
 
         System.out.println("mapToDouble() : " + mapToDouble());
 
-        System.out.println("mapToLong() : " + mapToLong());
+        System.out.println("mapToLongSum() : " + mapToLong());
 
     }
 }
