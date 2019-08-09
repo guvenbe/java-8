@@ -3,13 +3,26 @@ package com.learnJava.myversion.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class StudentDataBase {
 
     public static Supplier<Student> studentSupplier =()-> {
-        return new Student("Adam",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball"));
+        Bike bike = new Bike("Client123", "Client123");
+        Student student= new Student("Adam",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball"));
+        student.setBike(Optional.ofNullable(bike));
+        return student;
     };
+
+    public static Optional <Student> getOptionalStudent(){
+
+        Student student = new Student("Adam",2,4.0,"male", Arrays.asList("swimming", "basketball","volleyball"));
+
+        Bike bike = new Bike("Client123", "Client123");
+        student.setBike(Optional.of(bike));
+        return Optional.of(student);
+    }
     /**
      * Total of 6 students in the database.
      * @return
@@ -32,7 +45,7 @@ public class StudentDataBase {
         Student student5 = new Student("Sophia",4,3.5,"female", Arrays.asList("swimming", "dancing","football"), 15);
         Student student6 = new Student("James",4,3.9,"male", Arrays.asList("swimming", "basketball","baseball","football"), 14);
 
-        List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6);
+        List<Student> students = Arrays.asList(student1,student2,student3,student4,student5,student6, null);
         return students;
     }
 }
