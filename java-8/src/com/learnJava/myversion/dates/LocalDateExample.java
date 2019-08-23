@@ -42,9 +42,14 @@ public class LocalDateExample {
         System.out.println("localDate1=" + localDate1);
         System.out.println("isEqual=" + localDate.isEqual(localDate1));
         System.out.println("isBefore=" + localDate.isBefore(localDate1));
-        System.out.println("isBefore=" + localDate.isBefore(localDate1));
+        System.out.println("isBefore=" + localDate.isAfter(localDate1));
         System.out.println("isEqual=" + localDate.isBefore(localDate1));
 
+        /*
+        * Unsupported
+        * */
+
+        System.out.println("isSupported : " + localDate.isSupported(ChronoUnit.MINUTES));
 
 
 
